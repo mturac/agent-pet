@@ -107,7 +107,7 @@ class PixelPet {
     this.renderBar('Energy', this.energy, chalk.blue);
     
     console.log('  ' + chalk.gray('└' + '─'.repeat(boxWidth - 2) + '┘'));
-    console.log('\n  ' + chalk.gray('Commands: feed, play, code, sleep, status'));
+    console.log('\n  ' + chalk.gray('🍕 feed  🎮 play  💻 code  😴 sleep  📊 status  👋 quit'));
     console.log('');
   }
 
@@ -203,3 +203,15 @@ class PixelPet {
 }
 
 module.exports = { PixelPet, PETS };
+
+// Menu Icons (like Tamagotchi)
+const MENU_ICONS = {
+  food: chalk.yellow('🍕'),
+  play: chalk.green('🎮'),
+  code: chalk.cyan('💻'),
+  sleep: chalk.blue('😴'),
+  status: chalk.white('📊'),
+  quit: chalk.red('👋')
+};
+
+module.exports.MENU_ICONS = MENU_ICONS;
