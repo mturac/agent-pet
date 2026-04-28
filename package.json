@@ -1,0 +1,12 @@
+{
+  "name": "agent-pet",
+  "version": "0.1.0",
+  "description": "🐕 Your coding companion that grows with you",
+  "main": "index.js",
+  "bin": { "pet": "./bin/pet.js" },
+  "scripts": { "test": "echo \"Error: no test specified\" && exit 1" },
+  "keywords": ["cli", "pet", "companion", "game", "fun"],
+  "author": "TURAC",
+  "license": "MIT",
+  "dependencies": { "chalk": "^4.1.2" }
+}
